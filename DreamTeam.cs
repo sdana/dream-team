@@ -9,7 +9,7 @@ namespace dreamTeam
         public string Specialty { get; set; }
         public string Work()
         {
-            return $"{FullName} is performing {Specialty}";
+            return $"{FullName} is {Specialty}";
         }
     }
 }
