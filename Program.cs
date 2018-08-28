@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace dreamTeam
 {
@@ -6,9 +7,20 @@ namespace dreamTeam
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Dream Team");
-            William will = new William();
-            System.Console.WriteLine(will.Work());
+
+            List<DreamTeam> theDreamTeam = new List<DreamTeam>(){
+                new William(),
+                new Leah(),
+                new Vik(),
+                new Michael(),
+                new Adelaide(),
+                new Seth(),
+            };
+
+            foreach (DreamTeam member in theDreamTeam)
+            {
+                System.Console.WriteLine(member.Work());
+            }
         }
     }
 }
